@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    height: 95vh;
+    background: url('header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    /*border: 2px solid white;*/
+}
+
+nav h1.logo {
+    color: white;
+    width: 45%;
+    /*background-color: blue;*/
+    float: left;
+    padding-left: 35px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.nav-items a:link {
+    color: azure;
+}
+
+.nav-items a {
+    color: rgb(238, 200, 200);
+    /*background-color: red;*/
+}
+
+.header .nav-items a:visited {
+    color: aqua;
+}
+
+.header .nav-items a:hover {
+    color: rgb(243, 94, 94);
+    border-bottom: 1px solid rgb(49, 47, 47);
+}
+
+.navbar .nav-items {
+    float: right;
+    padding-top: 20px;
+}
+
+.navbar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navbar .nav-item {
+    display: inline;
+    padding-right: 20px;
+}
+
+.header_content {
+    /*background-color: white;*/
+    max-width: 70%;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.header .para {
+    padding-top: 30px;
+    color: white;
+    line-height: 30px;
+    word-spacing: 4px;
+    letter-spacing: 2.5px;
+}
+
+.header .link {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: rgb(251, 250, 252);
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 1%;
+    color: rgba(15, 4, 4, 0.03);
+}
+
+.header .travel {
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(78, 120, 176);
+    border-bottom: 2px solid rgb(75, 76, 73);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+.header_content a:link {
+    color: black;
+}
+
+.text-black {
+    color: #333333;
+}
+
+.text-gray {
+    color: #555555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary {
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.text-red {
+    color: red;
+}
+
+.btn-second {
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: #fff;
+}
+
+.btn-second:hover {
+    background-color: #fcf3f2;
+}
+
+
+/*##################################### For second page */
+
+.container {
+    max-width: 70%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bg-dark {
+    background-color: #263238;
+}
+
+
+/*############################################## For Second page */
+
+.showcase {
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row {
+    height: 356px;
+    border: 2px solid;
+    background-color: #fff;
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box,
+.row1.text-box {
+    float: right;
+    width: 50%;
+}
+
+.row1 .img-box {
+    border: 6px solid green;
+    height: 100%;
+}
+
+.row1 .img-box {
+    border: 2px solid;
+    padding: 0rem;
+}
+
+.row .img-box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*########################## Feature Section Styling##################################*/
+
+.features {
+    padding: 10rem 0;
+}
+
+.box-wrapper {}
+
+.box {
+    width: 33.33%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-1,
+.box-3 {
+    background-color: #263238;
+    color: #fff;
+}
+
+.box-2 {
+    background-color: rgb(220, 78, 78);
+    color: #fff;
+}
+
+.box-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*########################################About page styling##################*/
+
+.about {
+    padding: 5rem 0;
+}
+
+.about-heading {
+    border-bottom: 6px solid #e63946;
+}
+
+.space {
+    padding-top: 3%;
+}
+
+
+/*########################################## About Wrapper Styling########*/
+
+.about-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper .left {
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right {
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before {
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+
+/*############################## Count Styling #######*/
+
+.counts {
+    margin-top: 3rem;
+}
+
+.count-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count-item::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.count-item span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #121111;
+}
+
+.count-item p {
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+
+/*######################################### banner styling ##################*/
+
+.cta-banner {
+    border: 2px solid #000000;
+    background-color: rgb(227, 87, 87);
+    color: #f4f4f4;
+    padding: 1rem;
+}
+
+.cta-banner-left {
+    width: 60%;
+    float: left;
+}
+
+.cta-banner-right {
+    width: 40%;
+    float: left;
+}
+
+.cta-line {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cta {
+    background-color: rgb(134, 129, 129);
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3rem 1.5em;
+    letter-spacing: 0.5rem;
+    color: #023e3f;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.cta-banner::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .cta-line {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-top: 0.7rem;
+    }
+}
+
+
+/*################################################ Styling Contact #########*/
+
+.contact-form {
+    height: 760px;
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+
+.form-wrapper {}
+
+.company-address {
+    background: #fff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+
+.form-wrapper .company-address i {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group {
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img {
+    height: 30%;
+    max-width: 90%;
+    min-height: 4rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+.form-wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*###############################################Form Styling########*/
+
+.form {
+    height: 760px;
+    font-size: 0.9rem;
+    background: #fff;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+
+.form h1::after {
+    content: '';
+    display: block;
+    border: 3px solid #ee4758;
+    width: 100%;
+}
+
+.form-wrapper .form label {
+    display: block;
+    padding-top: 5%;
+}
+
+.form-wrapper .form input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label ::after {
+    content: '*';
+    columns: #e63946;
+}
+
+.form-wrapper .form textarea {
+    width: 100%;
+    max-height: 60%;
+    padding: 1rem;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
